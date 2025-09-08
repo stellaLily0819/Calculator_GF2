@@ -32,7 +32,7 @@ st.markdown(f"###실제 데미지 (z): `{z_val:.2f}`")
 x_vals = np.linspace(0, 400, 50)
 y_vals = np.linspace(0, 400, 50)
 X, Y = np.meshgrid(x_vals, y_vals)
-Z = compute_z(X, Y, atk, defense, w)
+Z = compute_z(X, Y, atk, defense, w, multiplier)
 
 fig = plt.figure(figsize=(10, 7))
 ax = fig.add_subplot(111, projection='3d')
