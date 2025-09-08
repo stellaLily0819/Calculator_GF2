@@ -17,6 +17,18 @@ st.latex(r'''\small
 z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방깎)}} \right)
 \cdot (피증) \cdot (약점계수) \cdot (스킬계수) \cdot (치피)
 ''')
+
+st.markdown("""
+<style>
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
 # z 계산 함수
 def compute_z(x, y, atk, defense, w, skill, multiplier):
     numerator = atk ** 2
