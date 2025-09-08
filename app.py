@@ -19,9 +19,9 @@ multiplier = st.radio("약점 계수:", [1.0, 1.1, 1.2], index=0, horizontal=Tru
 skill = st.slider("스킬 계수 %", 10, 200, 100, step=10)
 atk = st.slider("공격력", 0, 8000, 1000, step=10)
 defense = st.slider("적 방어력", 0, 7000, 1000, step=10)
-w = st.slider("방어감소 %", 0.0, 100.0, 50.0, step=10)
-x = st.slider("피해증가 %", 0.0, 400.0, 100.0, step=10)
-y = st.slider("치명피해 %", 0.0, 400.0, 100.0, step=10)
+w = st.slider("방어감소 %", 0, 100, 50, step=10)
+x = st.slider("피해증가 %", 0, 400, 100, step=10)
+y = st.slider("치명피해 %", 0, 400, 100, step=10)
 
 
 # z 값 계산
