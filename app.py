@@ -39,7 +39,7 @@ st.markdown("---")
 atk = st.slider("공격력", 0, 8000, 1000, step=10)
 defense = st.slider("적 방어력", 0, 7000, 1000, step=10)
 w = st.slider("방어감소 %", 0, 100, 50, step=10)
-x = st.slider("피해증가 %", 0, 400, 100, step=10)
+x = st.slider("피해증가 %", 0, 500, 100, step=10)
 y = st.slider("치명피해 %", 0, 400, 100, step=10)
 
 
@@ -52,7 +52,7 @@ st.markdown(f"### 실제 데미지 (z): `{z_val:.2f}`")
 
 # 3D
 x_vals = np.linspace(0, 400, 50)
-y_vals = np.linspace(0, 400, 50)
+y_vals = np.linspace(0, 500, 50)
 X, Y = np.meshgrid(x_vals, y_vals)
 Z = compute_z(X, Y, atk, defense, w, skill, multiplier)
 
