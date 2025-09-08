@@ -16,7 +16,7 @@ def compute_z(x, y, atk, defense, w, skill, multiplier):
 
 # 슬라이더
 multiplier = st.radio("약점 계수:", [1.0, 1.1, 1.2], index=0, horizontal=True)
-skill = st.slider("스킬 계수 %", 10, 200.0, 100, step=10)
+skill = st.slider("스킬 계수 %", 10, 200, 100, step=10)
 atk = st.slider("공격력", 0, 8000, 1000, step=10)
 defense = st.slider("적 방어력", 0, 7000, 1000, step=10)
 w = st.slider("방어감소 %", 0.0, 100.0, 50.0, step=10)
