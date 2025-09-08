@@ -5,6 +5,14 @@ from mpl_toolkits.mplot3d import Axes3D
 
 st.set_page_config(page_title="Dmg Graph", layout="centered")
 
+st.markdown("""
+<style>
+body {
+    background-color: #f0f2f6;
+}
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown("""<hr style="margin-top: 3px;">
 <p style='text-align: center; font-size: 12px; color: gray;'>
     Made by Caleo01 &nbsp;|&nbsp; Powered by Streamlit
@@ -17,15 +25,6 @@ st.latex(r'''\small
 z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방깎)}} \right)
 \cdot (피증) \cdot (약점계수) \cdot (스킬계수) \cdot (치피)
 ''')
-
-st.markdown("""
-<style>
-body {
-    background-color: #f0f2f6;
-}
-</style>
-""", unsafe_allow_html=True)
-
 
 # z 계산 함수
 def compute_z(x, y, atk, defense, w, skill, multiplier):
