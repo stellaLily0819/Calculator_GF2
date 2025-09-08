@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 st.set_page_config(page_title="Dmg Graph", layout="centered")
 
-st.markdown("""<hr style="margin-top: 50px;">
+st.markdown("""<hr style="margin-top: 3px;">
 <p style='text-align: center; font-size: 12px; color: gray;'>
     Made by Caleo01 &nbsp;|&nbsp; Powered by Streamlit
 </p>
