@@ -7,7 +7,7 @@ st.set_page_config(page_title="Dmg Graph", layout="centered")
 
 # 제목
 st.title("실시간 데미지 계산 그래프")
-st.latex(r'''\small
+st.latex(r'''\tiny
 z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방어감소)}} \right)
 \cdot (피해증가) \cdot (약점 계수) \cdot (스킬계수) \cdot (치명 피해)
 ''')
