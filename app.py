@@ -21,9 +21,7 @@ z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} 
 st.markdown("""
 <style>
 body {
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  background-repeat: repeat;
-  background-size: contain;
+    background-color: #f0f2f6;
 }
 </style>
 """, unsafe_allow_html=True)
