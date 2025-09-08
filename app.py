@@ -17,6 +17,7 @@ def compute_z(x, y, atk, defense, w, skill, multiplier):
 # 슬라이더
 multiplier = st.radio("약점 계수:", [1.0, 1.1, 1.2], index=0, horizontal=True)
 skill = st.slider("스킬 계수 %", 10, 800, 100, step=10)
+st.markdown("---")
 atk = st.slider("공격력", 0, 8000, 1000, step=10)
 defense = st.slider("적 방어력", 0, 7000, 1000, step=10)
 w = st.slider("방어감소 %", 0, 100, 50, step=10)
@@ -28,6 +29,7 @@ y = st.slider("치명피해 %", 0, 400, 100, step=10)
 z_val = compute_z(x, y, atk, defense, w, skill, multiplier)
 st.write(f"약점 계수 값: {multiplier}")
 st.write(f"스킬 계수 값: {skill}")
+st.markdown("---")
 st.markdown(f"### 실제 데미지 (z): `{z_val:.2f}`")
 
 # 3D
