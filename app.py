@@ -9,12 +9,13 @@ st.markdown("""<hr style="margin-top: 50px;">
 <p style='text-align: center; font-size: 12px; color: gray;'>
     Made by Caleo01 &nbsp;|&nbsp; Powered by Streamlit
 </p>
+""", unsafe_allow_html=True)
 
 # 제목
 st.title("실시간 데미지 계산 그래프")
 st.latex(r'''\small
-z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방어감소)}} \right)
-\cdot (피증계수) \cdot (약점계수) \cdot (스킬계수) \cdot (치명피해)
+z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방깎)}} \right)
+\cdot (피증) \cdot (약점계수) \cdot (스킬계수) \cdot (치피)
 ''')
 # z 계산 함수
 def compute_z(x, y, atk, defense, w, skill, multiplier):
