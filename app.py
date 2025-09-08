@@ -7,7 +7,10 @@ st.set_page_config(page_title="Dmg Graph", layout="centered")
 
 # 제목
 st.title("실시간 데미지 계산 그래프")
-
+st.latex(r'''
+z = \left( \frac{{\text{공격력}^2}}{{\text{공격력} + \text{적 방어력} \cdot (1 - 방어감소)}} \right)
+\cdot (피해증가) \cdot (약점 계수) \cdot (스킬계수) \cdot (치명 피해)
+''')
 # z 계산 함수
 def compute_z(x, y, atk, defense, w, skill, multiplier):
     numerator = atk ** 2
